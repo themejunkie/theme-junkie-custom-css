@@ -8,7 +8,7 @@
  * @author     Theme Junkie
  * @copyright  Copyright (c) 2014, Theme Junkie
  * @link       http://otto42.com/bj
- * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 /**
