@@ -31,7 +31,7 @@ If you want to see the live preview while you adding the custom css code, then y
 
 = Plugin Info =
 * Developed by [Theme Junkie](http://www.theme-junkie.com/)
-* [Github Repo](https://github.com/themejunkie/theme-junkie-custom-css).
+* Check out the [Github](https://github.com/themejunkie/theme-junkie-custom-css) repo to contribute.
 
 == Installation ==
 
@@ -52,6 +52,11 @@ If you want to see the live preview while you adding the custom css code, then y
 5. Then activate the plugin.
 6. Go to Appearance &rarr; Custom CSS.
 
+== Frequently Asked Questions ==
+
+= Can I use this plugin without purchasing Theme Junkie themes? =
+Yes, this plugin was developed to support all themes.
+
 == Screenshots ==
 
 1. Custom CSS settings.
@@ -59,5 +64,5 @@ If you want to see the live preview while you adding the custom css code, then y
 
 == Changelog ==
 
-= 0.1 - 4/18/2014 =
+= 0.1 - 4/20/2014 =
 * Initial Release
