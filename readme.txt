@@ -2,8 +2,8 @@
 Contributors: themejunkie, satrya
 Tags: custom css, customizer, css, style, theme, child theme
 Requires at least: 3.6
-Tested up to: 3.9
-Stable tag: 0.1.0
+Tested up to: 3.9.2
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,9 @@ Yes, this plugin was developed to support all themes.
 2. Customizer.
 
 == Changelog ==
+
+= 0.1.1 - 8/18/2014 =
+* Allow html entities in css selector eg. `#id > .class`
 
 = 0.1 - 4/20/2014 =
 * Initial Release

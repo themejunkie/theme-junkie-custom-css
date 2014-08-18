@@ -3,7 +3,7 @@
  * Plugin Name:  Theme Junkie Custom CSS
  * Plugin URI:   http://www.theme-junkie.com/
  * Description:  Easily to add custom css code to your site.
- * Version:      0.1.0
+ * Version:      0.1.1
  * Author:       Theme Junkie
  * Author URI:   http://www.theme-junkie.com/
  * Author Email: satrya@theme-junkie.com
@@ -34,8 +34,6 @@ class Tj_Custom_CSS {
 	 * PHP5 constructor method.
 	 *
 	 * @since  0.1.0
-	 * @access public
-	 * @return void
 	 */
 	public function __construct() {
 
@@ -57,8 +55,6 @@ class Tj_Custom_CSS {
 	 * Defines constants used by the plugin.
 	 *
 	 * @since  0.1.0
-	 * @access public
-	 * @return void
 	 */
 	public function constants() {
 
@@ -83,8 +79,6 @@ class Tj_Custom_CSS {
 	 * Loads the translation files.
 	 *
 	 * @since  0.1.0
-	 * @access public
-	 * @return void
 	 */
 	public function i18n() {
 		load_plugin_textdomain( 'tjcc', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
@@ -95,8 +89,6 @@ class Tj_Custom_CSS {
 	 * Loads the admin functions.
 	 *
 	 * @since  0.1.0
-	 * @access public
-	 * @return void
 	 */
 	public function admin() {
 		require_once( TJCC_ADMIN . 'admin.php' );
@@ -107,8 +99,6 @@ class Tj_Custom_CSS {
 	 * Loads the initial files needed by the plugin.
 	 *
 	 * @since  0.1.0
-	 * @access public
-	 * @return void
 	 */
 	public function includes() {
 		require_once( TJCC_INC . 'functions.php' );

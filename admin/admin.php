@@ -9,17 +9,10 @@
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-/* Add the custom css menu. */
-add_action( 'admin_menu', 'tjcc_custom_css_menu', 20 );
-
-/* Register setting. */
-add_action( 'admin_init', 'tjcc_register_setting' );
-
 /**
  * Add the custom css menu to the admin menu.
  *
  * @since  0.1.0
- * @access public
  * @link   http://codex.wordpress.org/Function_Reference/add_theme_page
  */
 function tjcc_custom_css_menu() {
@@ -40,12 +33,12 @@ function tjcc_custom_css_menu() {
     add_action( 'load-' . $setting, 'tjcc_scripts' );
 
 }
+add_action( 'admin_menu', 'tjcc_custom_css_menu', 20 );
 
 /**
  * Load scripts and styles for the custom css page.
  * 
  * @since  0.1.0
- * @access public
  * @link   http://codex.wordpress.org/Function_Reference/wp_enqueue_script
  * @link   http://codex.wordpress.org/Function_Reference/wp_enqueue_style
  */
@@ -67,7 +60,6 @@ function tjcc_scripts() {
  * Register the custom css setting.
  *
  * @since  0.1.0
- * @access public
  * @link   http://codex.wordpress.org/Function_Reference/register_setting
  */
 function tjcc_register_setting() {
@@ -79,12 +71,12 @@ function tjcc_register_setting() {
 	);
 
 }
+add_action( 'admin_init', 'tjcc_register_setting' );
 
 /**
  * Render the custom CSS page
  *
  * @since  0.1.0
- * @access public
  */
 function tjcc_custom_css_page() {
 	$options    = get_option( 'tj_custom_css' );
@@ -94,7 +86,7 @@ function tjcc_custom_css_page() {
 	<div class="wrap">
 
 		<h2><?php _e( 'Theme Junkie Custom CSS', 'tjcc' ) ?></h2>
-		<p><?php printf( __( 'Hi There, thanks for using our plugin we hope you will enjoy it. Check out our %1$sPremium WordPress Themes%2$s.', 'scrolltop' ), '<a href="http://www.theme-junkie.com/" target="_blank"><strong>', '</strong></a>' ); ?></p>
+		<p><?php printf( __( 'Hi There, thanks for using our plugin we hope you will enjoy it. Check out our %1$sPremium WordPress Themes%2$s.', 'tjcc' ), '<a href="http://www.theme-junkie.com/" target="_blank"><strong>', '</strong></a>' ); ?></p>
 
 		<?php settings_errors(); ?>
 		
@@ -143,9 +135,8 @@ function tjcc_custom_css_page() {
  * Sanitize and validate form input.
  *
  * @since  0.1.0
- * @access public
  */
 function tj_custom_css_setting_validate( $input ) {
-	$input['custom_css'] = wp_filter_nohtml_kses( $input['custom_css'] );
+	$input['custom_css'] = stripslashes( $input['custom_css'] );
 	return $input;
 }

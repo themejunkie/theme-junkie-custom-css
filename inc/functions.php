@@ -9,9 +9,6 @@
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-/* Output the custom css to the wp_head. */
-add_action( 'wp_head', 'tjcc_get_custom_css', 20 );
-
 /**
  * Get the custom css value and display it on front-end
  *
@@ -26,7 +23,7 @@ function tjcc_get_custom_css() {
 	if ( $output ) {
 		$css = '<!-- Custom CSS -->' . "\n";
 		$css .= '<style>' . "\n";
-		$css .= wp_filter_nohtml_kses( $output ) . "\n";
+		$css .= stripslashes( $output ) . "\n";
 		$css .= '</style>' . "\n";
 		$css .= '<!-- Generate by Theme Junkie Custom CSS -->' . "\n";
 
@@ -34,3 +31,4 @@ function tjcc_get_custom_css() {
 	}
 
 }
+add_action( 'wp_head', 'tjcc_get_custom_css', 20 );

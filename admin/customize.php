@@ -10,12 +10,6 @@
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-/* Load textarea function for customizer. */
-add_action( 'customize_register', 'tjcc_textarea_customize_control', 1 );
-
-/* Register custom sections, settings, and controls. */
-add_action( 'customize_register', 'tjcc_register_customize' );
-
 /**
  * Load textarea function for customizer.
  *
@@ -25,6 +19,7 @@ add_action( 'customize_register', 'tjcc_register_customize' );
 function tjcc_textarea_customize_control() {
 	require_once( TJCC_ADMIN . 'customize-control-textarea.php' );
 }
+add_action( 'customize_register', 'tjcc_textarea_customize_control', 1 );
 
 /**
  * Register customizer.
@@ -46,7 +41,7 @@ function tjcc_register_customize( $wp_customize ) {
 		array(
 			'type'              => 'option',
 			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'wp_filter_nohtml_kses'
+			'sanitize_callback' => 'stripslashes'
 		)
 	);
 
@@ -59,3 +54,4 @@ function tjcc_register_customize( $wp_customize ) {
 	) );
 
 }
+add_action( 'customize_register', 'tjcc_register_customize' );
