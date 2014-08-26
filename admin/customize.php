@@ -40,8 +40,7 @@ function tjcc_register_customize( $wp_customize ) {
 	$wp_customize->add_setting( 'tj_custom_css[custom_css]' ,
 		array(
 			'type'              => 'option',
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'stripslashes'
+			'capability'        => 'edit_theme_options'
 		)
 	);
 
