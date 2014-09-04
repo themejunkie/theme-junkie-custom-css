@@ -2,8 +2,8 @@
 Contributors: themejunkie, satrya
 Tags: custom css, customizer, css, style, theme, child theme
 Requires at least: 3.6
-Tested up to: 3.9.2
-Stable tag: 0.1.2
+Tested up to: 4.0
+Stable tag: 0.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,7 +54,7 @@ If you want to see the live preview while you adding the custom css code, then y
 
 == Frequently Asked Questions ==
 
-= Can I use this plugin without purchasing Theme Junkie themes? =
+= Can I use this plugin without being Theme Junkie customer? =
 Yes, this plugin was developed to support all themes.
 
 == Screenshots ==
@@ -63,6 +63,9 @@ Yes, this plugin was developed to support all themes.
 2. Customizer.
 
 == Changelog ==
+
+= 0.1.3 - 9/04/2014 =
+* Tested for WordPress 4.0
 
 = 0.1.2 - 8/26/2014 =
 * Fixed: `stripslashes` error when using customizer.

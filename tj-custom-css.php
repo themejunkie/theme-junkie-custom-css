@@ -3,7 +3,7 @@
  * Plugin Name:  Theme Junkie Custom CSS
  * Plugin URI:   http://www.theme-junkie.com/
  * Description:  Easily to add custom css code to your site.
- * Version:      0.1.2
+ * Version:      0.1.3
  * Author:       Theme Junkie
  * Author URI:   http://www.theme-junkie.com/
  * Author Email: satrya@theme-junkie.com
