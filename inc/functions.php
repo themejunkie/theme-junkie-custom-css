@@ -23,9 +23,9 @@ function tjcc_get_custom_css() {
 	if ( $output ) {
 		$css = '<!-- Custom CSS -->' . "\n";
 		$css .= '<style>' . "\n";
-		$css .= stripslashes( $output ) . "\n";
+		$css .= wp_filter_nohtml_kses( $output ) . "\n";
 		$css .= '</style>' . "\n";
-		$css .= '<!-- Generate by Theme Junkie Custom CSS -->' . "\n";
+		$css .= '<!-- Generate by https://wordpress.org/plugins/theme-junkie-custom-css/ -->' . "\n";
 
 		echo $css;
 	}

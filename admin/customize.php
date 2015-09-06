@@ -32,7 +32,7 @@ function tjcc_register_customize( $wp_customize ) {
 	$wp_customize->add_section( 'tj_custom_css_section',
 		array(
 			'title'       => esc_html__( 'Custom CSS', 'tjcc' ),
-			'description' => esc_html__( 'After you add your custom css to the box, then please click outside it to see the changes.', 'tjcc' ),
+			'description' => esc_html__( 'Add your custom css code below.', 'tjcc' ),
 			'priority'    => 150,
 		)
 	);
@@ -40,7 +40,8 @@ function tjcc_register_customize( $wp_customize ) {
 	$wp_customize->add_setting( 'tj_custom_css[custom_css]' ,
 		array(
 			'type'              => 'option',
-			'capability'        => 'edit_theme_options'
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'wp_filter_nohtml_kses',
 		)
 	);
 

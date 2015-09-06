@@ -19,7 +19,7 @@ function tjcc_custom_css_menu() {
 
 	/* Add Custom CSS menu under the Appearance. */
 	$setting = add_theme_page(
-		__( 'Theme Junkie Custom CSS', 'tjcc' ),
+		__( 'TJ Custom CSS', 'tjcc' ),
 		__( 'Custom CSS', 'tjcc' ),
 		'edit_theme_options',
 		'tj-custom-css',
@@ -85,8 +85,8 @@ function tjcc_custom_css_page() {
 
 	<div class="wrap">
 
-		<h2><?php _e( 'Theme Junkie Custom CSS', 'tjcc' ) ?></h2>
-		<p><?php printf( __( 'Hi There, thanks for using our plugin we hope you will enjoy it. Check out our %1$sPremium WordPress Themes%2$s.', 'tjcc' ), '<a href="http://www.theme-junkie.com/" target="_blank"><strong>', '</strong></a>' ); ?></p>
+		<h2><?php _e( 'TJ Custom CSS', 'tjcc' ) ?></h2>
+		<p><?php _e( 'Hi There, thanks for using our plugin we hope you enjoy it.', 'tjcc' ); ?></p>
 
 		<?php settings_errors(); ?>
 		
@@ -116,6 +116,13 @@ function tjcc_custom_css_page() {
 				<div>
 
 					<div class="postbox">
+						<h3 class="hndle"><span><?php _e( 'Premium Themes', 'tjcc' ); ?></span></h3>
+						<div class="inside">
+							<p><?php printf( __( 'Get our 59 premium WordPress themes for only $49! %1$sGet it now%2$s.', 'tjcc' ), '<a href="http://www.theme-junkie.com/themes/?utm_source=Custom%20CSS%20Sidebar&utm_medium=text&utm_campaign=plugin%20option%20convertion" target="_blank">', '</a>' ); ?></p>
+						</div>
+					</div>
+
+					<div class="postbox">
 						<h3 class="hndle"><span><?php _e( 'Live Preview', 'tjcc' ); ?></span></h3>
 						<div class="inside">
 							<p><?php printf( __( 'If you want to add custom css and see the live preview, please go to the %1$sCustomize%2$s page and open the Custom CSS section.', 'tjcc' ), '<a href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>' ); ?></p>
@@ -137,6 +144,6 @@ function tjcc_custom_css_page() {
  * @since  0.1.0
  */
 function tj_custom_css_setting_validate( $input ) {
-	$input['custom_css'] = stripslashes( $input['custom_css'] );
+	$input['custom_css'] = wp_filter_nohtml_kses( $input['custom_css'] );
 	return $input;
 }

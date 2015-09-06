@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name:  Theme Junkie Custom CSS
+ * Plugin Name:  TJ Custom CSS
  * Plugin URI:   http://www.theme-junkie.com/
  * Description:  Easily to add custom css code to your site.
- * Version:      0.1.3
+ * Version:      0.1.4
  * Author:       Theme Junkie
  * Author URI:   http://www.theme-junkie.com/
- * Author Email: satrya@theme-junkie.com
+ * Author Email: support@theme-junkie.com
  *
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
  * General Public License as published by the Free Software Foundation; either version 2 of the License, 

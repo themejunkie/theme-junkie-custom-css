@@ -1,13 +1,13 @@
-=== Theme Junkie Custom CSS ===
+=== TJ Custom CSS ===
 Contributors: themejunkie, satrya
 Tags: custom css, customizer, css, style, theme, child theme
-Requires at least: 3.6
-Tested up to: 4.0
-Stable tag: 0.1.3
+Requires at least: 4.0
+Tested up to: 4.3
+Stable tag: 0.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily to add any Custom CSS Code to your WordPress website.
+Easily to add any Custom CSS code to your WordPress website.
 
 == Description ==
 
@@ -30,7 +30,7 @@ If you want to see the live preview while you adding the custom css code, then y
 * Uninstall procedure
 
 = Plugin Info =
-* Developed by [Theme Junkie](http://www.theme-junkie.com/)
+* Developed by [Theme Junkie](http://www.theme-junkie.com/?utm_source=wporg&utm_medium=text_link&utm_campaign=Site%20Promotion)
 * Check out the [Github](https://github.com/themejunkie/theme-junkie-custom-css) repo to contribute.
 
 == Installation ==
@@ -52,17 +52,17 @@ If you want to see the live preview while you adding the custom css code, then y
 5. Then activate the plugin.
 6. Go to Appearance &rarr; Custom CSS.
 
-== Frequently Asked Questions ==
-
-= Can I use this plugin without being Theme Junkie customer? =
-Yes, this plugin was developed to support all themes.
-
 == Screenshots ==
 
 1. Custom CSS settings.
 2. Customizer.
 
 == Changelog ==
+
+= 0.1.4 - 9/04/2014 =
+* Support WordPress 4.3
+* Update language
+* Sanitize output with `wp_filter_nohtml_kses` to prevent user add any HTML code to the custom css
 
 = 0.1.3 - 9/04/2014 =
 * Tested for WordPress 4.0
