@@ -59,7 +59,7 @@ If you want to see the live preview while you adding the custom css code, then y
 
 == Changelog ==
 
-= 0.1.4 - 9/04/2014 =
+= 0.1.4 - 9/06/2015 =
 * Support WordPress 4.3
 * Update language
 * Sanitize output with `wp_filter_nohtml_kses` to prevent user add any HTML code to the custom css
