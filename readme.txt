@@ -1,5 +1,5 @@
 === TJ Custom CSS ===
-Contributors: themejunkie, satrya
+Contributors: themejunkie
 Tags: custom css, customizer, css, style, theme, child theme
 Requires at least: 4.0
 Tested up to: 4.3
