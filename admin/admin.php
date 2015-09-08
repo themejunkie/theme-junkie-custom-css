@@ -81,6 +81,7 @@ add_action( 'admin_init', 'tjcc_register_setting' );
 function tjcc_custom_css_page() {
 	$options    = get_option( 'tj_custom_css' );
 	$custom_css = isset( $options['custom_css'] ) ? $options['custom_css'] : '';
+	$custom_css = wp_kses( $custom_css, array( '\'', '\"', '>', '+' ) );
 	?>
 
 	<div class="wrap">
@@ -99,7 +100,7 @@ function tjcc_custom_css_page() {
 					<?php settings_fields( 'tj_custom_css' ); ?>
 
 					<div class="tjcc-custom-css-container">
-						<textarea name="tj_custom_css[custom_css]" id="tjcc-custom-css-textarea"><?php echo wp_filter_nohtml_kses( $custom_css ) ?></textarea>
+						<textarea name="tj_custom_css[custom_css]" id="tjcc-custom-css-textarea"><?php echo $custom_css; ?></textarea>
 					</div>
 
 					<p class="description">
@@ -144,6 +145,6 @@ function tjcc_custom_css_page() {
  * @since  0.1.0
  */
 function tj_custom_css_setting_validate( $input ) {
-	$input['custom_css'] = wp_filter_nohtml_kses( $input['custom_css'] );
+	$input['custom_css'] = wp_kses( $input['custom_css'], array( '\'', '\"', '>', '+' ) );
 	return $input;
 }

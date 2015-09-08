@@ -19,11 +19,13 @@ function tjcc_get_custom_css() {
 
 	$option = get_option( 'tj_custom_css' );
 	$output = isset( $option['custom_css'] ) ? $option['custom_css'] : '';
+	$output = wp_kses( $output, array( '\'', '\"', '>', '+' ) );
+	$output = str_replace( '&gt;', '>', $output );;
 
 	if ( $output ) {
 		$css = '<!-- Custom CSS -->' . "\n";
 		$css .= '<style>' . "\n";
-		$css .= wp_filter_nohtml_kses( $output ) . "\n";
+		$css .= $output . "\n";
 		$css .= '</style>' . "\n";
 		$css .= '<!-- Generate by https://wordpress.org/plugins/theme-junkie-custom-css/ -->' . "\n";
 

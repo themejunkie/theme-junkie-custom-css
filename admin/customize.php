@@ -41,7 +41,7 @@ function tjcc_register_customize( $wp_customize ) {
 		array(
 			'type'              => 'option',
 			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'wp_filter_nohtml_kses',
+			'sanitize_callback' => 'wp_kses',
 		)
 	);
 

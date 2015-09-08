@@ -3,7 +3,7 @@ Contributors: themejunkie
 Tags: custom css, customizer, css, style, theme, child theme
 Requires at least: 4.0
 Tested up to: 4.3
-Stable tag: 0.1.4
+Stable tag: 0.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,9 @@ If you want to see the live preview while you adding the custom css code, then y
 2. Customizer.
 
 == Changelog ==
+
+= 0.1.5 - 9/08/2015 =
+* Fixed some selecter being striped
 
 = 0.1.4 - 9/06/2015 =
 * Support WordPress 4.3
