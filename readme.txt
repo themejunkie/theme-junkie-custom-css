@@ -2,8 +2,8 @@
 Contributors: themejunkie
 Tags: custom css, customizer, css, style, theme, child theme
 Requires at least: 4.0
-Tested up to: 4.3
-Stable tag: 0.1.5
+Tested up to: 4.4.2
+Stable tag: 0.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,14 +11,14 @@ Easily to add any Custom CSS code to your WordPress website.
 
 == Description ==
 
-This plugin will enable a custom css manager on administration page to add Custom CSS code to your WordPress website. It will automatically override any theme or plugin default styles. It also very useful if you want to add customization to your website but do not want to edit your theme or plugin css files.
+This plugin will enable a [custom css manager](https://www.theme-junkie.com/plugins/theme-junkie-custom-css/) on administration page to add Custom CSS code to your WordPress website. It will automatically override any theme or plugin default styles. It also very useful if you want to add customization to your website but do not want to edit your theme or plugin css files.
 
 It comes with two ways to add the custom css code:
 
-**1. Setting**  
+**1. Setting**
 You can go to Appearance &rarr; Custom CSS, then you will see a big box/textarea. Put your css code there.
 
-**2. Customizer - Live Preview**  
+**2. Customizer - Live Preview**
 If you want to see the live preview while you adding the custom css code, then you can go to Appearance &rarr; Customize, after that open the Custom CSS section tab.
 
 = Features Include: =
@@ -30,7 +30,7 @@ If you want to see the live preview while you adding the custom css code, then y
 * Uninstall procedure
 
 = Plugin Info =
-* Developed by [Theme Junkie](http://www.theme-junkie.com/?utm_source=wporg&utm_medium=text_link&utm_campaign=Site%20Promotion)
+* Developed by [Theme Junkie](https://www.theme-junkie.com/?utm_source=wporg&utm_medium=text_link&utm_campaign=Site%20Promotion)
 * Check out the [Github](https://github.com/themejunkie/theme-junkie-custom-css) repo to contribute.
 
 == Installation ==
@@ -58,6 +58,10 @@ If you want to see the live preview while you adding the custom css code, then y
 2. Customizer.
 
 == Changelog ==
+
+= 0.1.6 - Feb 26, 2016 =
+* Support WordPress 4.4.2
+* Change text domain to `theme-junkie-custom-css`
 
 = 0.1.5 - 9/08/2015 =
 * Fixed some selecter being striped

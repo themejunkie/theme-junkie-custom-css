@@ -1,11 +1,11 @@
 <?php
 /**
  * Custom CSS setting.
- * 
+ *
  * @package    Theme_Junkie_Custom_CSS
  * @since      0.1.0
  * @author     Theme Junkie
- * @copyright  Copyright (c) 2014, Theme Junkie
+ * @copyright  Copyright (c) 2014 - 2016, Theme Junkie
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
 
@@ -19,8 +19,8 @@ function tjcc_custom_css_menu() {
 
 	/* Add Custom CSS menu under the Appearance. */
 	$setting = add_theme_page(
-		__( 'TJ Custom CSS', 'tjcc' ),
-		__( 'Custom CSS', 'tjcc' ),
+		__( 'TJ Custom CSS', 'theme-junkie-custom-css' ),
+		__( 'Custom CSS', 'theme-junkie-custom-css' ),
 		'edit_theme_options',
 		'tj-custom-css',
 		'tjcc_custom_css_page'
@@ -37,7 +37,7 @@ add_action( 'admin_menu', 'tjcc_custom_css_menu', 20 );
 
 /**
  * Load scripts and styles for the custom css page.
- * 
+ *
  * @since  0.1.0
  * @link   http://codex.wordpress.org/Function_Reference/wp_enqueue_script
  * @link   http://codex.wordpress.org/Function_Reference/wp_enqueue_style
@@ -86,17 +86,17 @@ function tjcc_custom_css_page() {
 
 	<div class="wrap">
 
-		<h2><?php _e( 'TJ Custom CSS', 'tjcc' ) ?></h2>
-		<p><?php _e( 'Hi There, thanks for using our plugin we hope you enjoy it.', 'tjcc' ); ?></p>
+		<h2><?php _e( 'TJ Custom CSS', 'theme-junkie-custom-css' ) ?></h2>
+		<p><?php _e( 'Hi There, thanks for using our plugin we hope you enjoy it.', 'theme-junkie-custom-css' ); ?></p>
 
 		<?php settings_errors(); ?>
-		
+
 		<div id="post-body" class="tjcc-custom-css metabox-holder columns-2">
-			
+
 			<div id="post-body-content">
 
 				<form action="options.php" method="post">
-			
+
 					<?php settings_fields( 'tj_custom_css' ); ?>
 
 					<div class="tjcc-custom-css-container">
@@ -104,11 +104,11 @@ function tjcc_custom_css_page() {
 					</div>
 
 					<p class="description">
-						<?php printf( __( '%1$sGetting started with CSS%2$s.', 'tjcc' ), '<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started" target="_blank">', '</a>' ); ?>
+						<?php printf( __( '%1$sGetting started with CSS%2$s.', 'theme-junkie-custom-css' ), '<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started" target="_blank">', '</a>' ); ?>
 					</p>
-					
-					<?php submit_button( esc_attr__( 'Save', 'tjcc' ), 'primary large' ); ?>
-			
+
+					<?php submit_button( esc_attr__( 'Save', 'theme-junkie-custom-css' ), 'primary large' ); ?>
+
 				</form>
 
 			</div><!-- .post-body-content -->
@@ -117,16 +117,16 @@ function tjcc_custom_css_page() {
 				<div>
 
 					<div class="postbox">
-						<h3 class="hndle"><span><?php _e( 'Premium Themes', 'tjcc' ); ?></span></h3>
+						<h3 class="hndle"><span><?php _e( 'Premium Themes', 'theme-junkie-custom-css' ); ?></span></h3>
 						<div class="inside">
-							<p><?php printf( __( 'Get our 59 premium WordPress themes for only $49! %1$sGet it now%2$s.', 'tjcc' ), '<a href="http://www.theme-junkie.com/themes/?utm_source=Custom%20CSS%20Sidebar&utm_medium=text&utm_campaign=plugin%20option%20convertion" target="_blank">', '</a>' ); ?></p>
+							<p><?php printf( __( 'Get our 65 premium WordPress themes for only $99! %1$sGet it now%2$s.', 'theme-junkie-custom-css' ), '<a href="http://www.theme-junkie.com/themes/?utm_source=Custom%20CSS%20Sidebar&utm_medium=text&utm_campaign=plugin%20option%20convertion" target="_blank">', '</a>' ); ?></p>
 						</div>
 					</div>
 
 					<div class="postbox">
-						<h3 class="hndle"><span><?php _e( 'Live Preview', 'tjcc' ); ?></span></h3>
+						<h3 class="hndle"><span><?php _e( 'Live Preview', 'theme-junkie-custom-css' ); ?></span></h3>
 						<div class="inside">
-							<p><?php printf( __( 'If you want to add custom css and see the live preview, please go to the %1$sCustomize%2$s page and open the Custom CSS section.', 'tjcc' ), '<a href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>' ); ?></p>
+							<p><?php printf( __( 'If you want to add custom css and see the live preview, please go to the %1$sCustomize%2$s page and open the Custom CSS section.', 'theme-junkie-custom-css' ), '<a href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>' ); ?></p>
 						</div>
 					</div>
 

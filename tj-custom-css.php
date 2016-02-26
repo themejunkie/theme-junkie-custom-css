@@ -1,27 +1,27 @@
 <?php
 /**
  * Plugin Name:  TJ Custom CSS
- * Plugin URI:   http://www.theme-junkie.com/
+ * Plugin URI:   https://www.theme-junkie.com/plugins/theme-junkie-custom-css/
  * Description:  Easily to add custom css code to your site.
- * Version:      0.1.5
+ * Version:      0.1.6
  * Author:       Theme Junkie
- * Author URI:   http://www.theme-junkie.com/
+ * Author URI:   https://www.theme-junkie.com/
  * Author Email: support@theme-junkie.com
  *
- * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
- * General Public License as published by the Free Software Foundation; either version 2 of the License, 
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+ * General Public License as published by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * You should have received a copy of the GNU General Public License along with this program; if not, write 
+ * You should have received a copy of the GNU General Public License along with this program; if not, write
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
  * @package    Theme_Junkie_Custom_CSS
  * @since      0.1.0
  * @author     Theme Junkie
- * @copyright  Copyright (c) 2014, Theme Junkie
+ * @copyright  Copyright (c) 2014 - 2016, Theme Junkie
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
 
@@ -81,7 +81,7 @@ class Tj_Custom_CSS {
 	 * @since  0.1.0
 	 */
 	public function i18n() {
-		load_plugin_textdomain( 'tjcc', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'theme-junkie-custom-css', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
 	/**

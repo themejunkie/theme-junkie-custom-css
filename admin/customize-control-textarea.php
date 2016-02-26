@@ -1,12 +1,12 @@
 <?php
 /**
- * The textarea customize control extends the WP_Customize_Control class.  This class allows 
+ * The textarea customize control extends the WP_Customize_Control class.  This class allows
  * developers to create textarea settings within the WordPress theme customizer.
  *
  * @package    Theme_Junkie_Custom_CSS
  * @since      0.1.0
  * @author     Theme Junkie
- * @copyright  Copyright (c) 2014, Theme Junkie
+ * @copyright  Copyright (c) 2014 - 2016, Theme Junkie
  * @link       http://otto42.com/bj
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
@@ -39,5 +39,5 @@ class Tj_Customize_Control_Textarea extends WP_Customize_Control {
 			</div>
 		</label>
 	<?php }
-	
+
 }
